@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <title>100 glaz</title>
+    @Styles.Render("~/css")
+</head>
+
+@Scripts.Render("~/bundles/common")
+
+<body class="@ViewBag.BodyClass">
+    <div id="wrapper">
+        <header id="header">
+            @Html.Action("Index", "Head")
+        </header>
+
+        <main id="main">
+            @RenderBody()
+        </main>
+        <div id="subfooter"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="top_row">
+            <div class="inner">
+                <div class="tb w100">
+                    <div class="tbc vM">
+                        <img src="/content/images/item1.png" alt="">
+                    </div>
+                    <div class="tbc vM">
+                        <img src="/content/images/item2.png" alt="">
+                    </div>
+                    <div class="tbc vM">
+                        <img src="/content/images/item3.png" alt="">
+                    </div>
+                    <div class="tbc vM">
+                        <img src="/content/images/item1.png" alt="">
+                    </div>
+                    <div class="tbc vM">
+                        <img src="/content/images/item2.png" alt="">
+                    </div>
+                    <div class="tbc vM">
+                        <img src="/content/images/item3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="fleft rL hid">
+                <a class="inb vT" href="">Архив заказов</a>
+                <a class="inb vT" href="">Проверка полиса</a>
+            </div>
+            <div class="fright rL hid copy">
+                © 2018 Все права защищены.
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    <!-- modal-->
+    <div class="g-hidden">
+        <div class="b-modal reg" id="spasibo">
+            <div class="b-modal_close arcticmodal-close">X</div>
+            <div class="ah1 upp semibold">
+                Спасибо!
+            </div>
+            <p>Мы свяжемся с Вами в ближайшее время!</p>
+        </div>
+    </div>
+    @RenderSection("scripts", false)
+</body>
+</html>

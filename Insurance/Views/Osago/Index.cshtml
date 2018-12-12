@@ -1,0 +1,102 @@
+﻿@using Newtonsoft.Json
+@model Insurance.Model.App.Osago.OsagoData
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyADBH5w-vR6hFLTJOYmnzbm41AUuKiwzzc"></script>
+
+<script>
+    var _data = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(Model))');
+</script>
+
+<div class="osago_page">
+    <div id="bread_crumbs">
+        <div class="inner">
+            <ul>
+                <li class="inb vM rL"><a href="@Url.Action("Index", "Home")" class="db">Главная</a></li>
+                <li class="inb vM rL"><a href="@Url.Action("Index", "Osago")" class="db"> / ОСАГО Калькулятор</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="row rL hid">
+            <form>
+                <div class="row1 rL fleft">
+                    <div class="item1" onclick="_osago.setmode(_osago.modes.auto)">
+                        <label class="db rL">
+                            <input type="radio" name="1" class="db box inputbox">
+                            <b class="db"></b>
+                        </label>
+                    </div>
+                    <div class="item1" onclick="_osago.setmode(_osago.modes.moto)">
+                        <label class="db rL">
+                            <input type="radio" name="1" class="db box inputbox">
+                            <b class="db"></b>
+                        </label>
+                    </div>
+                    <div class="item1" onclick="_osago.setmode(_osago.modes.lorry)">
+                        <label class="db rL">
+                            <input type="radio" name="1" class="db box inputbox">
+                            <b class="db"></b>
+                        </label>
+                    </div>
+                    <div class="item1" onclick="_osago.setmode(_osago.modes.bus)">
+                        <label class="db rL">
+                            <input type="radio" name="1" class="db box inputbox">
+                            <b class="db"></b>
+                        </label>
+                    </div>
+                    <div class="item1" onclick="_osago.setmode(_osago.modes.trailer)">
+                        <label class="db rL">
+                            <input type="radio" name="1" class="db box inputbox">
+                            <b class="db"></b>
+                        </label>
+                    </div>
+                </div>
+                <div class="mobile_block rL hide">
+                    <span class="db">до 1600 см3</span>
+                </div>
+                <div id="div_groups" class="row2 rL fleft">
+                    <div class="item2">
+                        <label class="db rL">
+                            <input type="radio" name="2" class="db box inputbox">
+                            <b class="db">1000 - 1600 см3</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="row3 rL fleft">
+                    <div class="item3 rL">
+                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">
+                        <span>или</span>
+                        <label class="inb vM rL">
+                            <input type="checkbox" class="db box inputbox">
+                            <b class="db">EU</b>
+                        </label>
+                    </div>
+                    <div class="item3 rL" onclick="_osago.settaxi()">
+                        <label class="db rL">
+                            <input type="checkbox" name="2" class="db box inputbox">
+                            <b class="db rL">Такси</b>
+                        </label>
+                    </div>
+                    <div class="item3 rL" onclick="_osago.setprivilege()">
+                        <label class="db rL">
+                            <input type="checkbox" name="2" class="db box inputbox">
+                            <b class="db rL">Льготы</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="row4 fleft rL ">
+                    <div class="item4">
+                        <span class="db alCenter">Лучшая цена по выбранным <b class="db"></b> пораметрам от</span>
+                        <a href="" class="db cover button" style="background-image: url(/Content/images/AXA_logo.svg);"></a>
+                        <p id="p_choosen_place" class="alCenter"></p>
+                        <p class="alCenter">от <span id="span_price"></span> грн.</p>
+                    </div>
+                    <a href="@Url.Action("Compare", "Osago")" class="button db">Перейти к сравнению</a>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/osago")

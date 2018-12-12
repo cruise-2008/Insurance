@@ -1,0 +1,2564 @@
+
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url('../fonts/SF-Pro-Display-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url('../fonts/SF-Pro-Display-Medium.otf') format("opentype");
+}
+
+.newpolis {
+  width               : 100%;
+  min-width           : 1920px;
+  height              : 100vh;
+  min-height          : 1183px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.newpolis .menu {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 47px;
+  height              : 24px;
+  width               : 396px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1254px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .menu .u041fu0440u043eu0432u0435u0440u043au0430u043fu043eu043bu0438u0441u0430 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 240px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 24.0px;
+}
+.newpolis .menu .u0410u0440u0445u0438u0432u0437u0430u043au0430u0437u043eu0432 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 24.0px;
+}
+.newpolis .logo {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 44px;
+  height              : 76px;
+  width               : 135px;
+  position            : absolute;
+  margin              : 0;
+  left                : 259px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .ovalcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 6px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .ovalcopy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 6px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 72px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .group10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 76px;
+  width               : 125px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .group10 .rectangle4 {
+  background-color    : rgba(217, 80, 80, 1.0);
+  top                 : 0px;
+  height              : 76px;
+  width               : 34px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .group10 .u041du043eu0432u044bu0439u041fu043eu043bu0438u0441 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 6px;
+  height              : 59px;
+  width               : 87px;
+  position            : absolute;
+  margin              : 0;
+  left                : 37px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .group10 .path {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 12px;
+  height              : 21px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 10px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logo .group10 .path1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 44px;
+  height              : 21px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 10px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .citufon {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 136px;
+  height              : 960px;
+  width               : 1948px;
+  position            : absolute;
+  margin              : 0;
+  left                : -9px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .footer {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1058px;
+  height              : 129px;
+  width               : 1920px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .footer .rectangle9 {
+  background-color    : rgba(41, 41, 41, 1.0);
+  top                 : 0px;
+  height              : 129px;
+  width               : 1920px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .footer .a2512018u0412u0441u0435u043fu0440u0430u0432u0430u0437u0430u0449 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 39px;
+  height              : auto;
+  width               : 728px;
+  position            : absolute;
+  margin              : 0;
+  left                : 922px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.newpolis .footer .u041fu0440u043eu0432u0435u0440u043au0430u043fu043eu043bu0438u0441u0430copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 29px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 444px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 24.0px;
+}
+.newpolis .footer .u0410u0440u0445u0438u0432u0437u0430u043au0430u0437u043eu0432copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 29px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 269px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 24.0px;
+}
+.newpolis .logos {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 938px;
+  height              : 125px;
+  width               : 1923px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logos .rectangle16 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 125px;
+  width               : 1923px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .logos .photooriginalscopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 18px;
+  height              : 90px;
+  width               : 145px;
+  position            : absolute;
+  margin              : 0;
+  left                : 501px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .logos .photooriginalscopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 18px;
+  height              : 90px;
+  width               : 145px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1226px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .logos .a1copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 31px;
+  height              : 59px;
+  width               : 188px;
+  position            : absolute;
+  margin              : 0;
+  left                : 254px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .logos .a1copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 31px;
+  height              : 59px;
+  width               : 188px;
+  position            : absolute;
+  margin              : 0;
+  left                : 979px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .logos .axalogocopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42px;
+  height              : 44px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 715px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.33;
+}
+.newpolis .logos .axalogocopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42px;
+  height              : 44px;
+  width               : 196px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1439px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.33;
+}
+.newpolis .ticet3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 297px;
+  height              : 587px;
+  width               : 426px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1448px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet3 .greentic {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 587px;
+  width               : 426px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet3 .greentic .rectangle2copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 587px;
+  width               : 426px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet3 .greentic .u0417u0415u041bu0415u041du0410u042fu041au0410u0420u0422u0410 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 53px;
+  height              : auto;
+  width               : 253px;
+  position            : absolute;
+  margin              : 0;
+  left                : 89px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.newpolis .ticet3 .greentic .axalogo {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 489px;
+  height              : 43px;
+  width               : 200px;
+  position            : absolute;
+  margin              : 0;
+  left                : 117px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.33;
+}
+.newpolis .ticet3 .greentic .u043eu0442copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 497px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 25.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 30.0px;
+}
+.newpolis .ticet3 .greentic .a700u0433u0440u043d {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 410px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 132px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Medium", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.newpolis .ticet3 .greentic .u041bu0443u0447u0448u0435u0435u043fu0440u0435u0434u043bu043eu0436u0435u043du0438u0435copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 334px;
+  height              : auto;
+  width               : 300px;
+  position            : absolute;
+  margin              : 0;
+  left                : 62px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 26.0px;
+}
+.newpolis .ticet3 .greentic .u041du0430u0441u0435u0433u043eu0434u0433u044f2808201copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 369px;
+  height              : auto;
+  width               : 254px;
+  position            : absolute;
+  margin              : 0;
+  left                : 86px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(209, 209, 209, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.newpolis .ticet2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 297px;
+  height              : 586px;
+  width               : 425px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1054px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet2 .touri {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 586px;
+  width               : 425px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet2 .touri .rectangle2copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 586px;
+  width               : 425px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet2 .touri .u0422u0443u0440u0435u0441u0442u0438u0447u0435u0441u043au0430u044f {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 54px;
+  height              : auto;
+  width               : 226px;
+  position            : absolute;
+  margin              : 0;
+  left                : 105px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.newpolis .ticet2 .touri .photooriginals {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 466px;
+  height              : 88px;
+  width               : 148px;
+  position            : absolute;
+  margin              : 0;
+  left                : 144px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .ticet2 .touri .u043eu0442copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 497px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 25.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 30.0px;
+}
+.newpolis .ticet2 .touri .a500u0433u0440u043d {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 410px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 131px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Medium", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.newpolis .ticet2 .touri .u041bu0443u0447u0448u0435u0435u043fu0440u0435u0434u043bu043eu0436u0435u043du0438u0435copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 334px;
+  height              : auto;
+  width               : 300px;
+  position            : absolute;
+  margin              : 0;
+  left                : 62px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 26.0px;
+}
+.newpolis .ticet2 .touri .u041du0430u0441u0435u0433u043eu0434u0433u044f2808201copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 367px;
+  height              : auto;
+  width               : 254px;
+  position            : absolute;
+  margin              : 0;
+  left                : 86px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(209, 209, 209, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.newpolis .ticet1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 297px;
+  height              : 586px;
+  width               : 427px;
+  position            : absolute;
+  margin              : 0;
+  left                : 658px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet1 .osago {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 586px;
+  width               : 427px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet1 .osago .rectangle2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 586px;
+  width               : 427px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ticet1 .osago .a300u0433u0440u043d {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 410px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 133px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Medium", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 43.0px;
+}
+.newpolis .ticet1 .osago .u043eu0442 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 497px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 31px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 25.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 30.0px;
+}
+.newpolis .ticet1 .osago .u041bu0443u0447u0448u0435u0435u043fu0440u0435u0434u043bu043eu0436u0435u043du0438u0435 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 334px;
+  height              : auto;
+  width               : 300px;
+  position            : absolute;
+  margin              : 0;
+  left                : 63px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 26.0px;
+}
+.newpolis .ticet1 .osago .u041du0430u0441u0435u0433u043eu0434u0433u044f2808201 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 372px;
+  height              : auto;
+  width               : 254px;
+  position            : absolute;
+  margin              : 0;
+  left                : 87px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(209, 209, 209, 1.0);
+  text-align          : center;
+  line-height         : 16.0px;
+}
+.newpolis .ticet1 .osago .u041eu0421u0410u0413u041e {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 57px;
+  height              : auto;
+  width               : 162px;
+  position            : absolute;
+  margin              : 0;
+  left                : 142px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.newpolis .ticet1 .osago .a1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 479px;
+  height              : 58px;
+  width               : 192px;
+  position            : absolute;
+  margin              : 0;
+  left                : 141px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.35;
+}
+.newpolis .iustration3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 395px;
+  height              : 219px;
+  width               : 210px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1561px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 192px;
+  width               : 195px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .oval2copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 10px;
+  height              : 182px;
+  width               : 182px;
+  position            : absolute;
+  margin              : 0;
+  left                : 11px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .rectangle7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 103px;
+  height              : 58px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 147px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .oval10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 7px;
+  height              : 102px;
+  width               : 65px;
+  position            : absolute;
+  margin              : 0;
+  left                : 123px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .oval10copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : 102px;
+  width               : 65px;
+  position            : absolute;
+  margin              : 0;
+  left                : 130px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .oval9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 3px;
+  height              : 74px;
+  width               : 74px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .tree .oval9copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 74px;
+  width               : 74px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 95px;
+  height              : 124px;
+  width               : 190px;
+  position            : absolute;
+  margin              : 0;
+  left                : 20px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .shape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 51px;
+  height              : 63px;
+  width               : 147px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .shape1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 56px;
+  height              : 58px;
+  width               : 49px;
+  position            : absolute;
+  margin              : 0;
+  left                : 58px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle15 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 7px;
+  height              : 110px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 150px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .mask {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 6px;
+  height              : 111px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 152px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle12 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 60px;
+  height              : 51px;
+  width               : 13px;
+  position            : absolute;
+  margin              : 0;
+  left                : 160px;
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.newpolis .iustration3 .road .rectangle12copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 100px;
+  height              : 24px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 169px;
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.newpolis .iustration3 .road .rectangle12copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 22px;
+  height              : 52px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 161px;
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.newpolis .iustration3 .road .rectangle12copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : -2px;
+  height              : 39px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 157px;
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.newpolis .iustration3 .road .oval3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 47px;
+  height              : 18px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 158px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 18px;
+  height              : 15px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 155px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle14 {
+  background-color    : rgba(58, 58, 58, 1.0);
+  top                 : 24px;
+  height              : 3px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 159px;
+  border-radius       : 1px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle10 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 49px;
+  height              : 13px;
+  width               : 173px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .iustration3 .road .rectangle10copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 52px;
+  height              : 7px;
+  width               : 165px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 408px;
+  height              : 210px;
+  width               : 208px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1181px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 189px;
+  width               : 182px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .oval2copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 189px;
+  width               : 182px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 94px;
+  height              : 78px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 95px;
+  height              : 29px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 15px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 88px;
+  height              : 19px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 65px;
+  height              : 32px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 97px;
+  height              : 39px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 28px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 82px;
+  height              : 16px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 94px;
+  height              : 34px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 46px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shapecopy7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 71px;
+  height              : 22px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 61px;
+  height              : 96px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 87px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 59px;
+  height              : 29px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 64px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 55px;
+  height              : 19px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 101px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 29px;
+  height              : 32px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 71px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 62px;
+  height              : 39px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 77px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 45px;
+  height              : 16px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 57px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 62px;
+  height              : 34px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 99px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .tree .shape8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 40px;
+  height              : 22px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 99px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 29px;
+  height              : 181px;
+  width               : 169px;
+  position            : absolute;
+  margin              : 0;
+  left                : 39px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 65px;
+  height              : 78px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 30px;
+  height              : 29px;
+  width               : 35px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 26px;
+  height              : 19px;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 62px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 32px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 32px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32px;
+  height              : 96px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32px;
+  height              : 96px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 57px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 33px;
+  height              : 39px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 38px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 16px;
+  height              : 16px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 33px;
+  height              : 34px;
+  width               : 27px;
+  position            : absolute;
+  margin              : 0;
+  left                : 60px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 11px;
+  height              : 22px;
+  width               : 36px;
+  position            : absolute;
+  margin              : 0;
+  left                : 60px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 172px;
+  height              : 8px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 110px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 168px;
+  height              : 8px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 144px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape12 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 63px;
+  height              : 114px;
+  width               : 75px;
+  position            : absolute;
+  margin              : 0;
+  left                : 86px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape13 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 65px;
+  height              : 113px;
+  width               : 64px;
+  position            : absolute;
+  margin              : 0;
+  left                : 105px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape14 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 84px;
+  height              : 25px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape15 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 66px;
+  height              : 13px;
+  width               : 60px;
+  position            : absolute;
+  margin              : 0;
+  left                : 107px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape16 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 84px;
+  height              : 25px;
+  width               : 54px;
+  position            : absolute;
+  margin              : 0;
+  left                : 110px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape17 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 110px;
+  height              : 46px;
+  width               : 55px;
+  position            : absolute;
+  margin              : 0;
+  left                : 108px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape18 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 111px;
+  height              : 46px;
+  width               : 55px;
+  position            : absolute;
+  margin              : 0;
+  left                : 110px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .u20ac {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 126px;
+  height              : auto;
+  width               : 15px;
+  position            : absolute;
+  margin              : 0;
+  left                : 129px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "SFProDisplay-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.newpolis .ilustration2 .bags .shape19 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 86px;
+  height              : 11px;
+  width               : 51px;
+  position            : absolute;
+  margin              : 0;
+  left                : 111px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape20 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 113px;
+  height              : 11px;
+  width               : 51px;
+  position            : absolute;
+  margin              : 0;
+  left                : 112px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 88px;
+  height              : 3px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 115px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape22 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 117px;
+  height              : 3px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 116px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape23 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 33px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 110px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape24 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 33px;
+  height              : 29px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 112px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape25 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32px;
+  height              : 6px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 116px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape26 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 34px;
+  height              : 5px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 116px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape27 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 105px;
+  height              : 10px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 33px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape28 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 110px;
+  height              : 69px;
+  width               : 92px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape29 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 115px;
+  height              : 66px;
+  width               : 85px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape30 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 116px;
+  height              : 13px;
+  width               : 82px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape31 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 111px;
+  height              : 64px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 17px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape32 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 114px;
+  height              : 65px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 53px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape33 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 111px;
+  height              : 22px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 14px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape34 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 114px;
+  height              : 22px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 52px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape35 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 114px;
+  height              : 2px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape36 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 112px;
+  height              : 1px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape37 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 116px;
+  height              : 2px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 56px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape38 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 115px;
+  height              : 1px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 60px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape39 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 106px;
+  height              : 10px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 32px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape40 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 105px;
+  height              : 4px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 39px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape41 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 106px;
+  height              : 11px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 50px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape42 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 106px;
+  height              : 10px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 50px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape43 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 104px;
+  height              : 3px;
+  width               : 9px;
+  position            : absolute;
+  margin              : 0;
+  left                : 40px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape44 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 62px;
+  height              : 4px;
+  width               : 6px;
+  position            : absolute;
+  margin              : 0;
+  left                : 107px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape45 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 62px;
+  height              : 4px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 113px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape46 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 61px;
+  height              : 3px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 134px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape47 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 61px;
+  height              : 3px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 139px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape48 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32px;
+  height              : 3px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 116px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape49 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 139px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 55px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape50 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 139px;
+  height              : 3px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 55px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape51 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 139px;
+  height              : 1px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 56px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape52 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 137px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape53 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 137px;
+  height              : 3px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape54 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 138px;
+  height              : 1px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape55 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 168px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 55px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape56 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 168px;
+  height              : 3px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 55px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape57 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 169px;
+  height              : 1px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 56px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape58 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 165px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape59 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 165px;
+  height              : 3px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape60 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 166px;
+  height              : 1px;
+  width               : 1px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .ilustration2 .bags .shape61 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 104px;
+  height              : 4px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 39px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 405px;
+  height              : 216px;
+  width               : 262px;
+  position            : absolute;
+  margin              : 0;
+  left                : 763px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .oval2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 182px;
+  width               : 182px;
+  position            : absolute;
+  margin              : 0;
+  left                : 28px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 37px;
+  height              : 179px;
+  width               : 262px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval4copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 136px;
+  height              : 15px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 221px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 105px;
+  height              : 60px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 87px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .pathcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 100px;
+  height              : 42px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 4px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 114px;
+  height              : 51px;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 90px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 116px;
+  height              : 43px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 178px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 116px;
+  height              : 43px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 171px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 101px;
+  height              : 40px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 4px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 121px;
+  height              : 40px;
+  width               : 23px;
+  position            : absolute;
+  margin              : 0;
+  left                : 93px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 105px;
+  height              : 32px;
+  width               : 14px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 126px;
+  height              : 28px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 95px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 109px;
+  height              : 22px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 132px;
+  height              : 13px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .combinedshapecopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 50px;
+  height              : 92px;
+  width               : 135px;
+  position            : absolute;
+  margin              : 0;
+  left                : 77px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 78px;
+  height              : 30px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .ovalcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 72px;
+  height              : 32px;
+  width               : 71px;
+  position            : absolute;
+  margin              : 0;
+  left                : 34px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 73px;
+  height              : 19px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 49px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval2copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 75px;
+  height              : 15px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 51px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval2copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 78px;
+  height              : 11px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 54px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval5copy7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 115px;
+  height              : 11px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 11px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 36px;
+  height              : 80px;
+  width               : 135px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  -ms-transform       : rotate(-315deg); /* IE 9 */
+  -webkit-transform   : rotate(-315deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-315deg);
+}
+.newpolis .illustration1 .car .path12 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 86px;
+  height              : 29px;
+  width               : 81px;
+  position            : absolute;
+  margin              : 0;
+  left                : 131px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .combinedshape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 150px;
+  height              : 29px;
+  width               : 65px;
+  position            : absolute;
+  margin              : 0;
+  left                : 197px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 122px;
+  height              : 3px;
+  width               : 3px;
+  position            : absolute;
+  margin              : 0;
+  left                : 34px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 128px;
+  height              : 17px;
+  width               : 53px;
+  position            : absolute;
+  margin              : 0;
+  left                : 29px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .combinedshape1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 43px;
+  height              : 98px;
+  width               : 123px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval8 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 86px;
+  height              : 5px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 53px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 85px;
+  height              : 51px;
+  width               : 33px;
+  position            : absolute;
+  margin              : 0;
+  left                : 1px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 86px;
+  height              : 66px;
+  width               : 160px;
+  position            : absolute;
+  margin              : 0;
+  left                : 75px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path9copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 87px;
+  height              : 68px;
+  width               : 160px;
+  position            : absolute;
+  margin              : 0;
+  left                : 75px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 101px;
+  height              : 16px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 134px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .oval7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 96px;
+  height              : 16px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 218px;
+  -ms-transform       : rotate(-330deg); /* IE 9 */
+  -webkit-transform   : rotate(-330deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-330deg);
+}
+.newpolis .illustration1 .car .path10 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 88px;
+  height              : 2px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 57px;
+  -ms-transform       : rotate(12deg); /* IE 9 */
+  -webkit-transform   : rotate(12deg); /* Chrome, Safari, Opera */
+  transform           : rotate(12deg);
+}
+.newpolis .illustration1 .car .path13 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 130px;
+  height              : 28px;
+  width               : 110px;
+  position            : absolute;
+  margin              : 0;
+  left                : 128px;
+  -ms-transform       : rotate(176deg); /* IE 9 */
+  -webkit-transform   : rotate(176deg); /* Chrome, Safari, Opera */
+  transform           : rotate(176deg);
+}
+.newpolis .illustration1 .car .oval4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 137px;
+  height              : 16px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 163px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.newpolis .illustration1 .car .path14 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 57px;
+  height              : 24px;
+  width               : 61px;
+  position            : absolute;
+  margin              : 0;
+  left                : 130px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}

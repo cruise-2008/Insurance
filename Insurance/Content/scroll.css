@@ -1,0 +1,21 @@
+/*автоматически выводится вертикальный скролл, если текст по высоте больше высоты scroll_block*/
+/*автоматически выводится горизонтальный скролл, если текст по ширине больше ширины scroll_block*/
+
+
+.jspPane{margin:0 !important; position:relative;}
+.jspHorizontalBar{ height:11px; background-color:#fff; border:2px solid #e1e1e1; width:100%; position:absolute; left:0; bottom:30px; z-index:200000;}
+.jspHorizontalBar:after{ width:2px; height:11px; background:#e1e1e1; right:2px; top:0; content:''; position:absolute; display:block;}
+.jspContainer{position:relative; padding-bottom:30px; overflow:hidden;}
+.jspTrack{position:relative; }
+.jspDrag{background:red; position:relative; display:block; cursor:pointer; height:11px;}
+.jspCap{display: none;}
+
+.jspVerticalBar{height:100%; position:absolute; right:0; top:0; z-index:200000; width:11px; background-color:#fff; border:2px solid #e1e1e1;}
+.jspVerticalBar:after{ width:11px; height:2px; background:#e1e1e1; right:0; bottom:0; content:''; position:absolute; display:block;}
+
+.scroll_block{position:relative; overflow-x:scroll; overflow-y:scroll; width:500px; height:100%; display:block !important;}/**/
+.jspArrowUp{width:10px; height:10px; background:#000; display:block;}
+.jspArrowDown{width:10px; height:10px; background:#000; display:block;}
+
+.inner{position:relative;}
+p{ display:block;}

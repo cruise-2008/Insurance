@@ -1,0 +1,30 @@
+﻿@model Insurance.Models.ViewModel.HeadViewModel
+<div class="inner">
+    <a href="@Url.Action("Index", "Home")" class="fleft rL hid logo db"></a>
+    <a href="@Url.Action("Index", "PoliceCheck")" class="fright rL hid one_link">Проверка полиса</a>
+    <div class="fright rL right_block alCenter">
+        @if (Model.IsAuth)
+        {
+            <a href="@Url.Action("Index", "Parlour")">@Model.Phone</a>
+        }
+        else
+        {
+            if (Model.BallanceClicked)
+            {
+                <span class="plus abs db">+ (380)</span>
+                <input id="inputphone" class="phone1 rL" maxlength="11">
+
+                <a id="a_phone_wrong" class="after_link inb vT cp modal g-hidden">Неправильный формат номера телефона!</a>
+                <a id="a_phone_abscent" class="after_link inb vT cp modal g-hidden">Номера телефона в базе нет! </a>
+            }
+            else
+            {
+                <a id="a_ballance" href="#">Баланс</a>
+            }
+        }
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+@Scripts.Render("~/bundles/head")
