@@ -232,6 +232,15 @@ header, nav, section, article, aside, footer, main{display:block;}
 .osago_page .row .row4 .item4 p {font-size: 27px; line-height: 30px; font-weight: bold;}
 .osago_page .row .row4 > a.button {line-height: 58px; margin-top: 91px; width: 100%;background-color: #D95050;color: #fff;font-size: 19px;}
 
+.btn_bottom {
+    line-height: 58px;
+    margin-top: 91px;
+    width: 100%;
+    background-color: #D95050;
+    color: #fff;
+    font-size: 19px;
+}
+
 .zakaz {background: none;}
 .zakaz .row {padding: 0px;}
 .zakaz_page #bread_crumbs {background-color: #F9F9F9;padding-top: 29px;padding-bottom: 22px;}

@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Insurance.Model.Interfaces;
+using System;
 
 namespace Insurance.Controllers
 {
@@ -20,10 +21,17 @@ namespace Insurance.Controllers
             return View(osagoCompanies);
         }
 
-        public ActionResult Compare()
+        [HttpPost]
+        public ActionResult Compare(string comparison)
         {
-            ViewBag.BodyClass = "zakaz";
-            return View();
+            if (!String.IsNullOrWhiteSpace(comparison))
+            {
+                ViewBag.BodyClass = "zakaz";
+                return View();
+            }
+            TempData["Message"] = "Enter the place of registration of the vehicle";
+            return RedirectToAction("Index");
+
         }
     }
 }

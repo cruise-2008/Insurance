@@ -18,7 +18,8 @@
     </div>
     <div class="inner">
         <div class="row rL hid">
-            <form>
+            <h4 style="color:red">@TempData["Message"]</h4>
+            <form method="post" action="@Url.Action("Compare", "Osago")">
                 <div class="row1 rL fleft">
                     <div class="item1" onclick="_osago.setmode(_osago.modes.auto)">
                         <label class="db rL">
@@ -64,7 +65,8 @@
                 </div>
                 <div class="row3 rL fleft">
                     <div class="item3 rL">
-                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">
+                        @*<input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">*@
+                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM" name="comparison" autofocus>
                         <span>или</span>
                         <label class="inb vM rL">
                             <input type="checkbox" class="db box inputbox">
@@ -91,7 +93,7 @@
                         <p id="p_choosen_place" class="alCenter"></p>
                         <p class="alCenter">от <span id="span_price"></span> грн.</p>
                     </div>
-                    <a href="@Url.Action("Compare", "Osago")" class="button db">Перейти к сравнению</a>
+                    <a href="@Url.Action("Compare", "Osago")"><button type="submit" class="btn_bottom" id="Comp">Перейти к сравнению</button></a>
                 </div>
             </form>
             <div class="clear"></div>
