@@ -20,7 +20,7 @@ _osago.priceUpdate = function () {
     $('#span_price').text(price);
 }
 
-_osago.volumeClick = function(k) {
+_osago.volumeClick = function (k) {
     _osago.calc.mode = k;
     _osago.priceUpdate();
 }
@@ -37,12 +37,12 @@ _osago.setprivilege = function () {
 
 _osago.build = {};
 _osago.build.volumeItem = function (item) {
-    return "<div class='item2'>" + 
-                    "<label class='db rL'>" +
-                    "<input type='radio' name='2' class='db box inputbox'>" +
-                    "<b class='db' onclick='_osago.volumeClick(" + item.K + ")'>" + item.Text + "</b>" +
-                "</label>" +
-            "</div>";
+    return "<div class='item2'>" +
+        "<label class='db rL'>" +
+        "<input type='radio' name='2' class='db box inputbox'>" +
+        "<b class='db' onclick='_osago.volumeClick(" + item.K + ")'>" + item.Text + "</b>" +
+        "</label>" +
+        "</div>";
 }
 
 _osago.setmode = function (mode) {
@@ -63,10 +63,14 @@ _osago.setmodeDefault = function () {
 
 _osago.setCurrentPlace = function () {
     var callBack = function (places) {
-        $.each(places, function(i, v) {
+        var isPlaceFound = 0;
+        $.each(places, function (i, v) {
             $.each(_data.Companies, function (j, w) {
-                $.each(w.Places, function(y, g) {
+                $.each(w.Places, function (y, g) {
+                    //  alert($('#inpt_osago_gsearch').val());
                     if (v.place_id === g.PlaceGoogleId) {
+                        isPlaceFound = 1;
+                        alert($('#inpt_osago_gsearch').val());
                         $('#inpt_osago_gsearch').val(g.Name);
                         $('#p_choosen_place').text(g.Name);
                         _osago.calc.place = g.K;
@@ -76,15 +80,20 @@ _osago.setCurrentPlace = function () {
                 });
             });
         });
+        if (isPlaceFound == 0) {
+            if ($('#inpt_osago_gsearch').val() != '') {
+                alert('Enter the place of registration of the vehicle')
+            }
+        }
     }
     _gsearch.getCurrentPlace(callBack);
 }
 
-_osago.setPlace = function(place) {
+_osago.setPlace = function (place) {
     console.log(place);
 }
 
-_osago.init = function() {
+_osago.init = function () {
     _gsearch.init("inpt_osago_gsearch", _osago.setPlace);
     _osago.setmodeDefault();
     _osago.setCurrentPlace();

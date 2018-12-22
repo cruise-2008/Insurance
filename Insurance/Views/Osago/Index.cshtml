@@ -17,9 +17,10 @@
         </div>
     </div>
     <div class="inner">
+        <div id="alertMsg"></div>
         <div class="row rL hid">
             <h4 style="color:red">@TempData["Message"]</h4>
-            <form method="post" action="@Url.Action("Compare", "Osago")">
+            <form action="@Url.Action("Compare", "Osago")">
                 <div class="row1 rL fleft">
                     <div class="item1" onclick="_osago.setmode(_osago.modes.auto)">
                         <label class="db rL">
@@ -66,7 +67,7 @@
                 <div class="row3 rL fleft">
                     <div class="item3 rL">
                         @*<input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">*@
-                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM" name="comparison" autofocus>
+                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM" onchange="_osago.setCurrentPlace()" autofocus>
                         <span>или</span>
                         <label class="inb vM rL">
                             <input type="checkbox" class="db box inputbox">
@@ -93,12 +94,28 @@
                         <p id="p_choosen_place" class="alCenter"></p>
                         <p class="alCenter">от <span id="span_price"></span> грн.</p>
                     </div>
-                    <a href="@Url.Action("Compare", "Osago")"><button type="submit" class="btn_bottom" id="Comp">Перейти к сравнению</button></a>
+                    <a href="@Url.Action("Compare", "Osago")" id="pagesource"></a>
+                    <button type="button" class="btn_bottom" id="Comp">Перейти к сравнению</button>
                 </div>
             </form>
             <div class="clear"></div>
         </div>
     </div>
 </div>
+<script>
+    $('document').ready(function () {
+        $("#Comp").click(function () {
+            if ($('#inpt_osago_gsearch').val() == '') {
+                var altdiv = $('#alertMsg');
+                altdiv.css({ 'background-color': '#f2dede', 'padding': '10px', 'margin-top': '10px', 'color':'#a94442'});
+                altdiv.text('Enter the place of registration of the vehicle');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                
+                $('#pagesource')[0].click();
+            }
+        });
+    });
 
+</script>
 @Scripts.Render("~/bundles/osago")

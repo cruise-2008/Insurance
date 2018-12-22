@@ -21,16 +21,14 @@ namespace Insurance.Controllers
             return View(osagoCompanies);
         }
 
-        [HttpPost]
-        public ActionResult Compare(string comparison)
+   
+        public ActionResult Compare()
         {
-            if (!String.IsNullOrWhiteSpace(comparison))
-            {
+        
                 ViewBag.BodyClass = "zakaz";
                 return View();
-            }
-            TempData["Message"] = "Enter the place of registration of the vehicle";
-            return RedirectToAction("Index");
+        
+            
 
         }
     }
