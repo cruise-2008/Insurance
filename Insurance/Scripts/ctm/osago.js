@@ -30,11 +30,51 @@ _osago.settaxi = function () {
     _osago.priceUpdate();
 }
 
-_osago.setprivilege = function () {
-    _osago.calc.privilege = 0.9;
-    _osago.priceUpdate();
-}
+_osago.settaxi = function () {
+    debugger;
+    if ($('#taxi').is(':checked')) {
+        _osago.calc.taxi = 0.9;
+        _osago.priceUpdate();
 
+    }
+    else {
+        _osago.setmode(_osago.modes.auto);
+      //  _osago.setmode("auto");
+    }
+
+}
+_osago.setprivilege = function () {
+    debugger;
+    if ($('#privileges').is(':checked')) {
+        _osago.calc.taxi = 0.9;
+        _osago.priceUpdate();
+
+    }
+    else {
+        _osago.setmode(_osago.modes.auto);
+        //  _osago.setmode("auto");
+    }
+
+}
+_osago.ISEU = function () {
+
+    if ($('#EU').is(':checked')) {
+        var Europe = $('#EU').val();
+   
+      
+        $.ajax({
+            type: "POST",
+            url: "/Osago/GetEU",
+            data: '{eu: "' + Europe + '" }',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+            },
+          
+        });
+    }
+}
 _osago.build = {};
 _osago.build.volumeItem = function (item) {
     return "<div class='item2'>" +
@@ -70,7 +110,7 @@ _osago.setCurrentPlace = function () {
                     //  alert($('#inpt_osago_gsearch').val());
                     if (v.place_id === g.PlaceGoogleId) {
                         isPlaceFound = 1;
-                        alert($('#inpt_osago_gsearch').val());
+                      //  alert($('#inpt_osago_gsearch').val());
                         $('#inpt_osago_gsearch').val(g.Name);
                         $('#p_choosen_place').text(g.Name);
                         _osago.calc.place = g.K;
@@ -80,8 +120,8 @@ _osago.setCurrentPlace = function () {
                 });
             });
         });
-        if (isPlaceFound == 0) {
-            if ($('#inpt_osago_gsearch').val() != '') {
+        if (isPlaceFound === 0) {
+            if ($('#inpt_osago_gsearch').val() !== '') {
                 alert('Enter the place of registration of the vehicle')
             }
         }

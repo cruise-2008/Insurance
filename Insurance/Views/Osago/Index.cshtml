@@ -1,8 +1,10 @@
 ﻿@using Newtonsoft.Json
 @model Insurance.Model.App.Osago.OsagoData
+<meta charset="UTF-8">
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyADBH5w-vR6hFLTJOYmnzbm41AUuKiwzzc"></script>
-
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     var _data = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(Model))');
 </script>
@@ -24,7 +26,7 @@
                 <div class="row1 rL fleft">
                     <div class="item1" onclick="_osago.setmode(_osago.modes.auto)">
                         <label class="db rL">
-                            <input type="radio" name="1" class="db box inputbox">
+                            <input type="radio" id="auto" name="1" class="db box inputbox">
                             <b class="db"></b>
                         </label>
                     </div>
@@ -69,20 +71,20 @@
                         @*<input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">*@
                         <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM" onchange="_osago.setCurrentPlace()" autofocus>
                         <span>или</span>
-                        <label class="inb vM rL">
-                            <input type="checkbox" class="db box inputbox">
+                        <label class="inb vM rL" onclick="_osago.ISEU()">
+                            <input type="checkbox" class="db box inputbox" id="EU">
                             <b class="db">EU</b>
                         </label>
                     </div>
                     <div class="item3 rL" onclick="_osago.settaxi()">
                         <label class="db rL">
-                            <input type="checkbox" name="2" class="db box inputbox">
+                            <input type="checkbox" name="2" id="taxi" class="db box inputbox" >
                             <b class="db rL">Такси</b>
                         </label>
                     </div>
                     <div class="item3 rL" onclick="_osago.setprivilege()">
                         <label class="db rL">
-                            <input type="checkbox" name="2" class="db box inputbox">
+                            <input type="checkbox" name="2" id="privileges" class="db box inputbox">
                             <b class="db rL">Льготы</b>
                         </label>
                     </div>
@@ -98,24 +100,33 @@
                     <button type="button" class="btn_bottom" id="Comp">Перейти к сравнению</button>
                 </div>
             </form>
+                    
             <div class="clear"></div>
         </div>
     </div>
 </div>
-<script>
+<script type="text/javascript">
     $('document').ready(function () {
+    
         $("#Comp").click(function () {
             if ($('#inpt_osago_gsearch').val() == '') {
                 var altdiv = $('#alertMsg');
-                altdiv.css({ 'background-color': '#f2dede', 'padding': '10px', 'margin-top': '10px', 'color':'#a94442'});
+                altdiv.css({ 'background-color': '#f2dede', 'padding': '10px', 'margin-top': '10px', 'color': '#a94442' });
                 altdiv.text('Enter the place of registration of the vehicle');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             } else {
-                
+
                 $('#pagesource')[0].click();
             }
         });
     });
-
+  
+    $.get("https://api.ipdata.co?api-key=test", function (response) {
+        $("#ip").html("IP: " + response.ip);
+        $("#city").html(response.city + ", " + response.region);
+        $("#inpt_osago_gsearch").val(response.city + ", " + response.region);
+        $("#response").html(JSON.stringify(response, null, 4));
+    }, "jsonp");
 </script>
+
 @Scripts.Render("~/bundles/osago")

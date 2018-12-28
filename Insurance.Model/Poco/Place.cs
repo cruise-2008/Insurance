@@ -11,5 +11,6 @@ namespace Insurance.Model.Poco
         public string PlaceGoogleId { get; set; }
         public int CompanyId { get; set; }
         public double K { get; set; }
+        public bool IsEU {get; set; }
     }
 }

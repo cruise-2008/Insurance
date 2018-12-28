@@ -3,6 +3,7 @@ using DapperExtensions;
 using Insurance.Model.App.Osago;
 using Insurance.Model.Interfaces;
 using Insurance.Model.Poco;
+using System.Collections.Generic;
 
 namespace Insurance.Services.DataSourse
 {
@@ -35,5 +36,32 @@ namespace Insurance.Services.DataSourse
                 return null;
             }
         }
+        public List<Place> GetOsagePlace(bool eu)
+        {
+            try
+            {
+                var result = new OsagoData();
+                var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
+               
+                foreach (var place in places)
+                {
+                    var osagoplace = (OsagoPlace)place;
+                    var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).FirstOrDefault();
+                    //osagoplace.company.Add((place));
+                }
+                var groups = Connection.GetList<Group>().ToList();
+                foreach (var group in groups)
+                {
+                    result.Groups.Add((OsagoGroup)group);
+                }
+                
+                return places;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+       
     }
 }

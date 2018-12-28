@@ -20,16 +20,21 @@ namespace Insurance.Controllers
             var osagoCompanies = _osagoService.GetOsagoData();
             return View(osagoCompanies);
         }
-
+      [HttpPost]
+        public ActionResult GetEU(string eu)
+        {
+            if (eu == "on")
+            {
+                bool erp = true;
+                var osagoEUplace = _osagoService.GetOsagePlace(erp);
+            }
+            return RedirectToAction("Index");
+        }
    
         public ActionResult Compare()
         {
-        
                 ViewBag.BodyClass = "zakaz";
                 return View();
-        
-            
-
         }
     }
 }
