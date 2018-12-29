@@ -10,7 +10,7 @@ namespace Insurance.Model.App.Osago
         public double K { get; set; }
         public bool IsEU { get; set; }
         public List<OsagoPlace> place { get; set; }
-        public OsagoCompany company { get; set; }
+        public List<OsagoCompany> company { get; set; }
         public static explicit operator OsagoPlace(Place place)
         {
             return new OsagoPlace

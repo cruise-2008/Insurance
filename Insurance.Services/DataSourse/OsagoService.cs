@@ -36,7 +36,7 @@ namespace Insurance.Services.DataSourse
                 return null;
             }
         }
-        public List<Place> GetOsagePlace(bool eu)
+        public OsagoData GetOsagePlace(bool eu)
         {
             try
             {
@@ -45,17 +45,18 @@ namespace Insurance.Services.DataSourse
                
                 foreach (var place in places)
                 {
-                    var osagoplace = (OsagoPlace)place;
-                    var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).FirstOrDefault();
-                    //osagoplace.company.Add((place));
+                    var osago = (OsagoPlace)place;
+                    var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).ToList();
+                    //foreach (var e in europe)
+                    //{
+                    //    osago.company.Add((OsagoCompany)e);
+                    //}
+                    result.Places.Add(osago);
                 }
-                var groups = Connection.GetList<Group>().ToList();
-                foreach (var group in groups)
-                {
-                    result.Groups.Add((OsagoGroup)group);
-                }
-                
-                return places;
+                var mode = "auto";
+                var europe1 = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x=>x.K).Min();
+                result.coefficient = europe1;
+                return result;
             }
             catch
             {

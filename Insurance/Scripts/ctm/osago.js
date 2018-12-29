@@ -69,7 +69,7 @@ _osago.ISEU = function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (response) {
-                alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+                //alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
             },
           
         });
