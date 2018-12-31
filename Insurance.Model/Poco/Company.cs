@@ -18,6 +18,7 @@ namespace Insurance.Model.Poco
         public double K1000 { get; set; }
         public double K2000 { get; set; }
         public bool IsEnabled { get; set; }
+        
 
     }
 }

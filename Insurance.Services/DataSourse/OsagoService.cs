@@ -36,26 +36,50 @@ namespace Insurance.Services.DataSourse
                 return null;
             }
         }
+        //public OsagoData GetOsagePlace(bool eu)
+        //{
+        //    try
+        //    {
+        //        var result = new OsagoData();
+        //        var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
+
+        //        foreach (var place in places)
+        //        {
+        //            var osago = (OsagoPlace)place;
+        //            var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).ToList();
+        //            foreach (var e in europe)
+        //            {
+        //                var osagocompany = (OsagoCompany)e;
+        //                result.Companies.Add(osagocompany);
+        //            }
+
+        //            result.Places.Add(osago);
+        //        }
+        //        var mode = "auto";
+        //        var europe1 = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x=>x.K).Min();
+        //        result.coefficient = europe1;
+        //        return result;
+        //    }
+        //    catch
+        //    {
+        //        return null;
+        //    }
+        //}
         public OsagoData GetOsagePlace(bool eu)
         {
             try
             {
                 var result = new OsagoData();
                 var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
-               
-                foreach (var place in places)
-                {
-                    var osago = (OsagoPlace)place;
-                    var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).ToList();
-                    //foreach (var e in europe)
-                    //{
-                    //    osago.company.Add((OsagoCompany)e);
-                    //}
-                    result.Places.Add(osago);
-                }
+                var co = places.Where(x=>x.K==places.Min(y=>y.K)).Select(x => x.CompanyId);
+                double lowest_price = places.Min(c => c.K);
+                var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, co)).FirstOrDefault();
                 var mode = "auto";
-                var europe1 = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x=>x.K).Min();
-                result.coefficient = europe1;
+                var Mode = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x => x.K).Min();
+                result.coefficient = Mode;
+                result.K = lowest_price;
+                result.osago = (OsagoCompany)europe;
+
                 return result;
             }
             catch
@@ -63,6 +87,6 @@ namespace Insurance.Services.DataSourse
                 return null;
             }
         }
-       
+
     }
 }

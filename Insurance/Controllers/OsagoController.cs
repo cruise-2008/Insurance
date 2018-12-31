@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Insurance.Model.Interfaces;
 using System;
+using Insurance.Model.App.Osago;
 
 namespace Insurance.Controllers
 {
@@ -21,14 +22,11 @@ namespace Insurance.Controllers
             return View(osagoCompanies);
         }
       [HttpPost]
-        public ActionResult GetEU(string eu)
+        public JsonResult Index(bool eu)
         {
-            if (eu == "on")
-            {
-                bool erp = true;
-                var osagoEUplace = _osagoService.GetOsagePlace(erp);
-            }
-            return RedirectToAction("Index");
+            OsagoData osagoEUplace = new OsagoData();
+            osagoEUplace = _osagoService.GetOsagePlace(eu);
+            return Json(osagoEUplace);
         }
    
         public ActionResult Compare()

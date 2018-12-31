@@ -15,10 +15,20 @@ _osago.calc = {
     privilege: 1
 }
 
+_osago.UpdateEU = function (data) {
+    debugger;
+    
+        var amount = (180 * data.coefficient * data.K * data.osago.K1000 * data.osago.K1000 * data.osago.Commission * data.osago.Ktaxi * data.osago.Kprivileges).toFixed(2);
+        $('#span_price').text(amount);
+}
 _osago.priceUpdate = function () {
+    debugger;
     var price = (_osago.calc.place * _osago.calc.mode * _osago.calc.taxi * _osago.calc.privilege).toFixed(2);
     $('#span_price').text(price);
+
+
 }
+
 
 _osago.volumeClick = function (k) {
     _osago.calc.mode = k;
@@ -59,22 +69,29 @@ _osago.setprivilege = function () {
 _osago.ISEU = function () {
 
     if ($('#EU').is(':checked')) {
-        var Europe = $('#EU').val();
-   
-      
+        var Europe = $('#EU').is(':checked');
         $.ajax({
             type: "POST",
-            url: "/Osago/GetEU",
+            url: "/Osago/Index",
             data: '{eu: "' + Europe + '" }',
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (response) {
-                //alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+                debugger;
+                if (response !== null) {
+                   //alert("coefficient : " + response.coefficient);
+                    _osago.UpdateEU(response);
+                } else {
+                    alert("Something went wrong");
+                }
             },
-          
+       
+            error: function (response) {
+                alert("error");
+            }
         });
     }
-}
+} 
 _osago.build = {};
 _osago.build.volumeItem = function (item) {
     return "<div class='item2'>" +

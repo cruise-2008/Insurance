@@ -9,9 +9,6 @@ namespace Insurance.Model.Interfaces
         OsagoData GetOsagoData();
 
         OsagoData GetOsagePlace(bool eu);
-        //OsagoPlace GetOsagePlace(bool eu);
-       // List<Place> GetOsagePlace(bool eu);
-
 
     }
 }
