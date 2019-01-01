@@ -10,5 +10,7 @@ namespace Insurance.Model.Interfaces
 
         OsagoData GetOsagePlace(bool eu);
 
+        double GetOsageCoefficient(bool isEU, bool isTaxi, bool isPrivilege, string placeId, int groupK);
+
     }
 }

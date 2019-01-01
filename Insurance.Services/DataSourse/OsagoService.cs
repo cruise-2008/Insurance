@@ -9,30 +9,36 @@ namespace Insurance.Services.DataSourse
 {
     public class OsagoService : BaseService, IOsagoService
     {
-        public OsagoData GetOsagoData() {
-            try {
+        public OsagoData GetOsagoData()
+        {
+            try
+            {
                 var result = new OsagoData();
 
                 // Companies
                 var companies = Connection.GetList<Company>(Predicates.Field<Company>(x => x.IsEnabled, Operator.Eq, true)).ToList();
 
-                foreach (var company in companies) {
+                foreach (var company in companies)
+                {
                     var osagoCompany = (OsagoCompany)company;
 
                     var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.CompanyId, Operator.Eq, company.Id)).ToList();
-                    foreach (var place in places) {
+                    foreach (var place in places)
+                    {
                         osagoCompany.Places.Add((OsagoPlace)place);
                     }
                     result.Companies.Add(osagoCompany);
                 }
                 // Groups
                 var groups = Connection.GetList<Group>().ToList();
-                foreach (var group in groups) {
+                foreach (var group in groups)
+                {
                     result.Groups.Add((OsagoGroup)group);
                 }
                 return result;
             }
-            catch {
+            catch
+            {
                 return null;
             }
         }
@@ -71,7 +77,7 @@ namespace Insurance.Services.DataSourse
             {
                 var result = new OsagoData();
                 var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
-                var co = places.Where(x=>x.K==places.Min(y=>y.K)).Select(x => x.CompanyId);
+                var co = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId);
                 double lowest_price = places.Min(c => c.K);
                 var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, co)).FirstOrDefault();
                 var mode = "auto";
@@ -87,6 +93,56 @@ namespace Insurance.Services.DataSourse
                 return null;
             }
         }
+        public double GetOsageCoefficient(bool isEU, bool isTaxi, bool isPrivilege, string placeId, int groupK)
+        {
+            try
+            {
+                var result = new OsagoData();
 
+                double k2 = 1;
+                int companyID = 0;
+                var companyData = new Company();
+                double taxiK = 1;
+                double PrivilegeK = 1;
+                if (placeId != "1")
+                {
+                    var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, isEU)).Where(x => x.PlaceGoogleId == placeId).ToList();
+                    if (places.Count > 0)
+                    {
+                        companyID = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId).FirstOrDefault();
+                        k2 = places.Min(c => c.K);
+                    }
+                }
+                else
+                {
+                    var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, isEU)).ToList();
+                    companyID = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId).FirstOrDefault();
+                    k2 = places.Min(c => c.K);
+                }
+
+
+
+                if (companyID != 0)
+                {
+                    companyData = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, companyID)).FirstOrDefault();
+                    if (isTaxi == true)
+                    {
+                        taxiK = companyData.Ktaxi;
+                    }
+                    if (isPrivilege == true)
+                    {
+                        PrivilegeK = companyData.Kprivileges;
+                    }
+                }
+
+                double coefficient = 180 * groupK * k2 * taxiK * PrivilegeK;
+
+                return coefficient;
+            }
+            catch
+            {
+                return 1;
+            }
+        }
     }
 }

@@ -21,14 +21,24 @@ namespace Insurance.Controllers
             var osagoCompanies = _osagoService.GetOsagoData();
             return View(osagoCompanies);
         }
-      [HttpPost]
+
+        [HttpPost]
         public JsonResult Index(bool eu)
         {
             OsagoData osagoEUplace = new OsagoData();
             osagoEUplace = _osagoService.GetOsagePlace(eu);
             return Json(osagoEUplace);
         }
-   
+
+      //  [HttpPost]
+        public JsonResult CalculateCoefficient(bool isEU, bool isTaxi, bool isPrivilege, string placeId, int groupK)
+        {
+            var k = _osagoService.GetOsageCoefficient(isEU, isTaxi, isPrivilege, placeId, groupK);
+        
+            return Json(new {  data = k }, JsonRequestBehavior.AllowGet);
+        }
+
+
         public ActionResult Compare()
         {
                 ViewBag.BodyClass = "zakaz";
