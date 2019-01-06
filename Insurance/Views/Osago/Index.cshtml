@@ -1,10 +1,8 @@
 ﻿@using Newtonsoft.Json
 @model Insurance.Model.App.Osago.OsagoData
-<meta charset="UTF-8">
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyADBH5w-vR6hFLTJOYmnzbm41AUuKiwzzc"></script>
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script>
     var _data = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(Model))');
 </script>
@@ -19,38 +17,36 @@
         </div>
     </div>
     <div class="inner">
-        <div id="alertMsg"></div>
         <div class="row rL hid">
-            <h4 style="color:red">@TempData["Message"]</h4>
-            <form action="@Url.Action("Compare", "Osago")">
+            <form>
                 <div class="row1 rL fleft">
-                    <div class="item1" onclick="_osago.setmode(_osago.modes.auto)">
+                    <div class="item1">
                         <label class="db rL">
-                            <input type="radio" id="auto" name="1" class="db box inputbox" >
+                            <input type="radio" name="1" class="db box inputbox" onclick="_osago.setmode(_osago.modes.auto)">
                             <b class="db"></b>
                         </label>
                     </div>
-                    <div class="item1" onclick="_osago.setmode(_osago.modes.moto)">
+                    <div class="item1">
                         <label class="db rL">
-                            <input type="radio" id="moto"name="1" class="db box inputbox">
+                            <input type="radio" name="1" class="db box inputbox" onclick="_osago.setmode(_osago.modes.moto)">
                             <b class="db"></b>
                         </label>
                     </div>
-                    <div class="item1" onclick="_osago.setmode(_osago.modes.lorry)">
+                    <div class="item1">
                         <label class="db rL">
-                            <input type="radio" id="lorry"name="1" class="db box inputbox">
+                            <input type="radio" name="1" class="db box inputbox" onclick="_osago.setmode(_osago.modes.lorry)">
                             <b class="db"></b>
                         </label>
                     </div>
-                    <div class="item1" onclick="_osago.setmode(_osago.modes.bus)">
+                    <div class="item1">
                         <label class="db rL">
-                            <input type="radio" id="bus" name="1" class="db box inputbox">
+                            <input type="radio" name="1" class="db box inputbox" onclick="_osago.setmode(_osago.modes.bus)">
                             <b class="db"></b>
                         </label>
                     </div>
-                    <div class="item1" onclick="_osago.setmode(_osago.modes.trailer)">
+                    <div class="item1">
                         <label class="db rL">
-                            <input type="radio" name="1" class="db box inputbox">
+                            <input type="radio" name="1" class="db box inputbox" onclick="_osago.setmode(_osago.modes.trailer)">
                             <b class="db"></b>
                         </label>
                     </div>
@@ -59,32 +55,32 @@
                     <span class="db">до 1600 см3</span>
                 </div>
                 <div id="div_groups" class="row2 rL fleft">
-                    <div class="item2">
+                    @*JS autocomplete*@
+                    @*<div class="item2">
                         <label class="db rL">
                             <input type="radio" name="2" class="db box inputbox">
-                            <b class="db">1000 - 1600 см3</b>
+                            <b class="db">Text</b>
                         </label>
-                    </div>
+                    </div>*@
                 </div>
                 <div class="row3 rL fleft">
                     <div class="item3 rL">
-                        @*<input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">*@
-                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM" onchange="_osago.setCurrentPlace()" autofocus>
+                        <input id="inpt_osago_gsearch" type="text" class="inputbox box rL inb vM">
                         <span>или</span>
-                        <label class="inb vM rL" onclick="_osago.ISEU()">
-                            <input type="checkbox" class="db box inputbox" id="EU">
+                        <label class="inb vM rL">
+                            <input type="checkbox" class="db box inputbox" onclick="_osago.setEu()">
                             <b class="db">EU</b>
                         </label>
                     </div>
-                    <div class="item3 rL" onclick="_osago.settaxi()">
+                    <div class="item3 rL">
                         <label class="db rL">
-                            <input type="checkbox" name="2" id="taxi" class="db box inputbox" >
+                            <input type="checkbox" name="2" class="db box inputbox" onclick="_osago.setTaxi()">
                             <b class="db rL">Такси</b>
                         </label>
                     </div>
-                    <div class="item3 rL" onclick="_osago.setprivilege()">
+                    <div class="item3 rL">
                         <label class="db rL">
-                            <input type="checkbox" name="2" id="privileges" class="db box inputbox">
+                            <input type="checkbox" name="2" class="db box inputbox" onclick="_osago.setPrivilege()">
                             <b class="db rL">Льготы</b>
                         </label>
                     </div>
@@ -96,37 +92,12 @@
                         <p id="p_choosen_place" class="alCenter"></p>
                         <p class="alCenter">от <span id="span_price"></span> грн.</p>
                     </div>
-                    <a href="@Url.Action("Compare", "Osago")" id="pagesource"></a>
-                    <button type="button" class="btn_bottom" id="Comp">Перейти к сравнению</button>
+                    <a href="@Url.Action("Compare", "Osago")" class="button db">Перейти к сравнению</a>
                 </div>
             </form>
-                    
             <div class="clear"></div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $('document').ready(function () {
-    
-        $("#Comp").click(function () {
-            if ($('#inpt_osago_gsearch').val() == '') {
-                var altdiv = $('#alertMsg');
-                altdiv.css({ 'background-color': '#f2dede', 'padding': '10px', 'margin-top': '10px', 'color': '#a94442' });
-                altdiv.text('Enter the place of registration of the vehicle');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-
-                $('#pagesource')[0].click();
-            }
-        });
-    });
-  
-    $.get("https://api.ipdata.co?api-key=test", function (response) {
-        $("#ip").html("IP: " + response.ip);
-        $("#city").html(response.city + ", " + response.region);
-        $("#inpt_osago_gsearch").val(response.city + ", " + response.region);
-        $("#response").html(JSON.stringify(response, null, 4));
-    }, "jsonp");
-</script>
 
 @Scripts.Render("~/bundles/osago")

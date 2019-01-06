@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Enum\AppRole.cs" />
+    <Compile Include="App\Osago\OsagoCompanyGroup.cs" />
     <Compile Include="App\Osago\OsagoCompany.cs" />
     <Compile Include="App\Osago\OsagoGroup.cs" />
     <Compile Include="App\Osago\OsagoData.cs" />
@@ -61,8 +62,12 @@
     <Compile Include="Interfaces\IBaseService.cs" />
     <Compile Include="Interfaces\IOsagoService.cs" />
     <Compile Include="Interfaces\IContactService.cs" />
+    <Compile Include="Poco\CompanyGroup.cs" />
     <Compile Include="Poco\Company.cs" />
     <Compile Include="Poco\Group.cs" />
+    <Compile Include="Poco\Settings.cs" />
+    <Compile Include="Poco\PlaceEu.cs" />
+    <Compile Include="Poco\PlaceDefault.cs" />
     <Compile Include="Poco\Place.cs" />
     <Compile Include="Poco\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -16,7 +16,11 @@ namespace Insurance.Model.App.Osago
         public double K1000 { get; set; }
         public double K2000 { get; set; }
 
+        public double PlaceDefault { get; set; }
+        public double PlaceEu { get; set; }
+
         public List<OsagoPlace> Places { get; set; }
+        public List<OsagoCompanyGroup> Groups { get; set; }
 
 
         public static explicit operator OsagoCompany(Company company)
@@ -32,7 +36,8 @@ namespace Insurance.Model.App.Osago
                 K0 = company.K0,
                 K1000 = company.K1000,
                 K2000 = company.K2000,
-                Places = new List<OsagoPlace>()
+                Places = new List<OsagoPlace>(),
+                Groups = new List<OsagoCompanyGroup>()
             };
         }
     }

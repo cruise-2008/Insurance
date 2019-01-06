@@ -3,145 +3,47 @@ using DapperExtensions;
 using Insurance.Model.App.Osago;
 using Insurance.Model.Interfaces;
 using Insurance.Model.Poco;
-using System.Collections.Generic;
 
 namespace Insurance.Services.DataSourse
 {
     public class OsagoService : BaseService, IOsagoService
     {
-        public OsagoData GetOsagoData()
-        {
-            try
-            {
-                var result = new OsagoData();
+        public OsagoData GetOsagoData() {
+            try {
+                var osagoData = new OsagoData {
+                    Bp = Connection.GetList<Settings>().First().Bp
+                };
+
+                // Groups
+                var commonGroups = Connection.GetList<Group>().ToList();
+                foreach (var group in commonGroups) {
+                    osagoData.Groups.Add((OsagoGroup)group);
+                }
 
                 // Companies
                 var companies = Connection.GetList<Company>(Predicates.Field<Company>(x => x.IsEnabled, Operator.Eq, true)).ToList();
 
-                foreach (var company in companies)
-                {
+                foreach (var company in companies) {
                     var osagoCompany = (OsagoCompany)company;
 
+                    osagoCompany.PlaceDefault = Connection.GetList<PlaceDefault>(Predicates.Field<PlaceDefault>(x => x.CompanyId, Operator.Eq, company.Id)).First().K;
+                    osagoCompany.PlaceEu = Connection.GetList<PlaceEu>(Predicates.Field<PlaceEu>(x => x.CompanyId, Operator.Eq, company.Id)).First().K;
+
                     var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.CompanyId, Operator.Eq, company.Id)).ToList();
-                    foreach (var place in places)
-                    {
+                    foreach (var place in places) {
                         osagoCompany.Places.Add((OsagoPlace)place);
                     }
-                    result.Companies.Add(osagoCompany);
+
+                    var groups = Connection.GetList<CompanyGroup>(Predicates.Field<CompanyGroup>(x => x.CompanyId, Operator.Eq, company.Id)).ToList();
+                    foreach (var group in groups) {
+                        osagoCompany.Groups.Add((OsagoCompanyGroup)group);
+                    }
+                    osagoData.Companies.Add(osagoCompany);
                 }
-                // Groups
-                var groups = Connection.GetList<Group>().ToList();
-                foreach (var group in groups)
-                {
-                    result.Groups.Add((OsagoGroup)group);
-                }
-                return result;
+                return osagoData;
             }
-            catch
-            {
+            catch {
                 return null;
-            }
-        }
-        //public OsagoData GetOsagePlace(bool eu)
-        //{
-        //    try
-        //    {
-        //        var result = new OsagoData();
-        //        var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
-
-        //        foreach (var place in places)
-        //        {
-        //            var osago = (OsagoPlace)place;
-        //            var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, place.CompanyId)).ToList();
-        //            foreach (var e in europe)
-        //            {
-        //                var osagocompany = (OsagoCompany)e;
-        //                result.Companies.Add(osagocompany);
-        //            }
-
-        //            result.Places.Add(osago);
-        //        }
-        //        var mode = "auto";
-        //        var europe1 = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x=>x.K).Min();
-        //        result.coefficient = europe1;
-        //        return result;
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}
-        public OsagoData GetOsagePlace(bool eu)
-        {
-            try
-            {
-                var result = new OsagoData();
-                var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, true)).ToList();
-                var co = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId);
-                double lowest_price = places.Min(c => c.K);
-                var europe = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, co)).FirstOrDefault();
-                var mode = "auto";
-                var Mode = Connection.GetList<Group>(Predicates.Field<Group>(x => x.Mode, Operator.Eq, mode)).Select(x => x.K).Min();
-                result.coefficient = Mode;
-                result.K = lowest_price;
-                result.osago = (OsagoCompany)europe;
-
-                return result;
-            }
-            catch
-            {
-                return null;
-            }
-        }
-        public double GetOsageCoefficient(bool isEU, bool isTaxi, bool isPrivilege, string placeId, int groupK)
-        {
-            try
-            {
-                var result = new OsagoData();
-
-                double k2 = 1;
-                int companyID = 0;
-                var companyData = new Company();
-                double taxiK = 1;
-                double PrivilegeK = 1;
-                if (placeId != "1")
-                {
-                    var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, isEU)).Where(x => x.PlaceGoogleId == placeId).ToList();
-                    if (places.Count > 0)
-                    {
-                        companyID = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId).FirstOrDefault();
-                        k2 = places.Min(c => c.K);
-                    }
-                }
-                else
-                {
-                    var places = Connection.GetList<Place>(Predicates.Field<Place>(x => x.IsEU, Operator.Eq, isEU)).ToList();
-                    companyID = places.Where(x => x.K == places.Min(y => y.K)).Select(x => x.CompanyId).FirstOrDefault();
-                    k2 = places.Min(c => c.K);
-                }
-
-
-
-                if (companyID != 0)
-                {
-                    companyData = Connection.GetList<Company>(Predicates.Field<Company>(x => x.Id, Operator.Eq, companyID)).FirstOrDefault();
-                    if (isTaxi == true)
-                    {
-                        taxiK = companyData.Ktaxi;
-                    }
-                    if (isPrivilege == true)
-                    {
-                        PrivilegeK = companyData.Kprivileges;
-                    }
-                }
-
-                double coefficient = 180 * groupK * k2 * taxiK * PrivilegeK;
-
-                return coefficient;
-            }
-            catch
-            {
-                return 1;
             }
         }
     }
