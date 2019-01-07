@@ -47,6 +47,7 @@ namespace Insurance
                 .Include("~/Content/nice-select.css")
                 .Include("~/Content/scroll.css")
                 .Include("~/Content/style.css")
+                .Include("~/Content/custom.css")
                 );
         }
     }

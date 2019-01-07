@@ -105,6 +105,40 @@ _osago.build.volumeItem = function (item) {
             "</div>";
 }
 
+
+_osago.managePrevAndTaxi = function (mode) {
+    var divtaxi = $("#div_taxi");
+    var divprev = $("#div_prev");
+
+    var taxi = divtaxi.find("input");
+    var prev = divprev.find("input");
+
+    if (mode !== _osago.modes.auto) {
+        if (_osago.calc.privilege) {
+            prev.click();
+        }
+        divprev.addClass("muted");
+        prev.attr("disabled", true);
+
+        if (mode !== _osago.modes.bus) {
+            if (_osago.calc.taxi) {
+                taxi.click();
+            }
+            divtaxi.addClass("muted");
+            taxi.attr("disabled", true);
+        } else {
+            divtaxi.removeClass("muted");
+            taxi.attr("disabled", false);
+        }
+    } else {
+        divprev.removeClass("muted");
+        prev.attr("disabled", false);
+        divtaxi.removeClass("muted");
+        taxi.attr("disabled", false);
+    }
+}
+
+
 _osago.setmode = function (mode) {
     var divgroups = $("#div_groups");
     divgroups.empty();
@@ -115,6 +149,7 @@ _osago.setmode = function (mode) {
         }
     });
     $(".item2 b").first().click();
+    _osago.managePrevAndTaxi(mode);
 }
 
 _osago.setmodeDefault = function () {

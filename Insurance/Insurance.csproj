@@ -259,6 +259,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\custom.css" />
     <Content Include="Content\images\aff.png" />
     <Content Include="Content\images\arow.svg" />
     <Content Include="Content\images\AXA.svg" />
